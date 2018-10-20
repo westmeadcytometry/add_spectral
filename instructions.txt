@@ -1,0 +1,24 @@
+Readme... please.
+
+add_spectral('test.fcs')
+%used to make a single spectral data fcs file for 'test'
+
+start_all_folder
+%used to make spectra data for all fcs's in the folder
+
+add_spectral_referenced('test.fcs','unstained.fcs')
+%used to make a single spectral data fcs file for 'test' referenced to 'unstained'. Keep both event numbers the same. 
+
+start_all_folder_referenced
+%used to make referenced spectra data for all fcs's in the folder. Looks for a file called unstained.fcs
+
+%requirements
+FCS file needs to be uncomensated
+FCS file needs to have 6 FSC/SSC channels (i.e. FSCA/H/W, SSCA/H/W).
+FCS file last parameter needs to be time.
+Useful to have the files pre-exported with the same number of downsampled events for comparisons. 
+
+%readfcs and writefcs and isInList is from Peng's Spade Souce Code.  
+http://pengqiu.gatech.edu/software/SPADE/
+
+
